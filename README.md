@@ -7,9 +7,6 @@ Foi pedido para desenvolver um website de uma loja de construção fictícia, co
 \#Tecnologias Usadas
 
 \*HTML4  
-
 \*HTML5  
-
 \*CSS3  
-
 \*JAVASCRIPT
