@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ChiqueEletrico</title>
+    <link rel="stylesheet" type="text/css" href="../css/ChiqueEletrico.css" />
+    <link href='https://fonts.googleapis.com/css?family=Karla|Stoke' rel='stylesheet'>
+    <script src="../js/script.js"></script>
+</head>
+
+<body>
+    <header>
+        <address class="ender">
+            Rua Chique Chique, 123 <br>
+            Tel. (21) 91234-4321 <br>
+            <a href="mailto:contato@chiqueletrico.com.br">contato@chiqueletrico.com.br</a>
+        </address>
+
+        <img class="imgLogo" src="../Imagens/LogoChiqueEletricoTopo.png"> <br>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="ChiqueEletrico.html"> Apresentação</a></li>
+            <li><a href="Materiais.html"> Materiais</a></li>
+            <li><a href="Acabamentos.html"> Acabamentos</a></li>
+            <li><a href="Pedidos.html"> Pedidos</a></li>
+        </ul>
+    </nav>
+    <section>
+        <table class="tabAcab">
+            <tr>
+                <th class="linTH" colspan="3">
+                    Acabamentos</th>
+            </tr>
+            <tr>
+                <th class="linTH">Marca/Linha</th>
+                <th class="linTH">Produto</th>
+                <th class="linTH">Descrição</th>
+            </tr>
+            <tr>
+                <th rowspan="3" class="colTH">
+                    Ilumi/Stylus</th>
+                </td>
+                <td class="menuTab">
+                    <a target="_self" href="javascript:ShowAcab(1);">
+                        Placa 4x4 </a>
+                </td>
+                <th rowspan="6">
+                    <div id="NomeDes">
+                        <p>&nbsp;</p>
+                        <p>&nbsp;</p>
+                    </div>
+                    <img id="ImgDes" src="../Imagens/vazio_150.png" />
+                    <div id="PrcDes">
+                        <p>&nbsp;<br />&nbsp;</p>
+                    </div>
+                </th>
+            </tr>
+            <tr>
+                <td class="menuTab">
+                    <a target="_self" href="javascript:ShowAcab(2);">
+                        Tomada</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="menuTab">
+                    <a target="_self" href="javascript:ShowAcab(3);">
+                        Interruptor</a>
+                </td>
+            </tr>
+            <tr>
+                <th rowspan="3" class="colTH">
+                    Ilumi/Slim</th>
+                </td>
+                <td class="menuTab">
+                    <a target="_self" href="javascript:ShowAcab(4);">
+                        Placa 4x2</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="menuTab">
+                    <a target="_self" href="javascript:ShowAcab(5);">
+                        Módulo Tomada</a>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="menuTab">
+                    <a target="_self" href="javascript:ShowAcab(6);">
+                        Módulo Interruptor</a>
+                </td>
+            </tr>
+        </table>
+
+    </section>
+</body>
+
+</html>

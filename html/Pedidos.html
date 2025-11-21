@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ChiqueEletrico</title>
+    <link rel="stylesheet" type="text/css" href="../css/ChiqueEletrico.css" />
+    <link href='https://fonts.googleapis.com/css?family=Karla|Stoke' rel='stylesheet'>
+    <script src="../js/script.js"></script>
+</head>
+
+<body>
+    <header>
+        <address class="ender">
+            Rua Chique Chique, 123 <br>
+            Tel. (21) 91234-4321 <br>
+            <a href="mailto:contato@chiqueletrico.com.br">contato@chiqueletrico.com.br</a>
+        </address>
+
+        <img class="imgLogo" src="../Imagens/LogoChiqueEletricoTopo.png"> <br>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="ChiqueEletrico.html"> Apresentação</a></li>
+            <li><a href="Materiais.html"> Materiais</a></li>
+            <li><a href="Acabamentos.html"> Acabamentos</a></li>
+            <li><a href="Pedidos.html"> Pedidos</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <div class="divCompras">
+            <h3>Compras</h3>
+            <form method="POST">
+                <fieldset>
+                    <legend> Identificação&nbsp;</legend>
+                    <div class="divLinha">
+                        <label class="colPri">Nome: </label>
+                        <input type="text" class="inpGrande" name="TxtNomeCompleto" />
+                    </div>
+                    <div class="divLinha">
+                        <label for="idEmail" class="colPri">E-mail:</label>
+                        <input id="idEmail" class="inpGrande" type="email" name="TxtEmail" required />
+                    </div>
+                    <div class="divLinha">
+                        <label class="colPri">Endereço: </label>
+                        <textarea name="TxtEnder" class="inpEnder"></textarea>
+                        <fieldset class="fsDir">
+                            <legend>Genero:</legend>
+                            <label><input type="radio" name="TglSexo" value="M" checked />Mas</label>
+                            <label><input type="radio" name="TglSexo" value="F" />Fem</label>
+                            <label><input type="radio" name="TglSexo" value="O" />Outro</label>
+                        </fieldset>
+                    </div>
+                    <div class="divLinha">
+                        <fieldset class="fsDir">
+                            <legend>Nacimento:</legend>
+                            <input type="number" name="TxtDiaNasc" min="1" max="31" class="numDD" /> /
+                            <input type="number" name="TxtMesNasc" min="1" max="12" class="numDD" /> /<input
+                                type="number" name="TxtAnoNasc" min="1920" max="2002" class="numQD" />
+                        </fieldset>
+                        <p><label class="colPri">Telefone:</label>
+                            <input type="text" class="impTelef" onChange="VerificaTelefone(this, 8)" name="Telefone"
+                                required />
+                        </p>
+                        <label class="colPri">Celular:</label>
+                        <input type="text" class="impTelef" onChange="VerificaTelefone(this, 9)" ; name="Celular" />
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Seleção de
+                        Produtos e Pagamento&nbsp;</legend>
+                    
+                        <Select name="selProduto" id="selProduto">
+                        <option> ----- </option>
+                        
+                        <optgroup label="Acabamento Sytlus">
+                            <option>Placa 4x4</option>
+                            <option>Tomada</option>
+                            <option>Interruptor</option>
+                        </optgroup>
+                        
+                        <optgroup label="Acabamento Slim">
+                            <option>Placa 4x2</option>
+                            <option>Módulo Tomada</option>
+                            <option>Módulo Interruptor</option>
+
+                        </optgroup>
+
+                        <optgroup label="Cabo Flexível">
+                            <option>Sil Preto 2,5mm</option>
+                            <option>Cobrecom Azul 2,5mm </option>
+                            <option>Sil Verde 2,5mm </option>
+
+                        </optgroup>
+
+                        <optgroup label="Terminais ilhós">
+                            <option>2,5mm</option>
+                            <option>4mm </option>
+                        </optgroup>
+
+
+                        <optgroup label="Conduíte">
+                            <option>Plastilit 1/2</option>
+                            <option>Plastilit 3/4 </option>
+                        </optgroup>
+
+                    </select>
+                    <input type="button" value="Incluir" onClick="IncluiLista( this.form.selProduto );" />
+                    <textarea class="listaCompras" name="listaPedidos" readonly></textarea>
+                    <div class="clear"> </div>
+                    <br /><br />
+                    <fieldset class="fsEsq">
+                        <legend> Cartão&nbsp;</legend>
+                        <label class="colLabCrd">Bandeira:
+                            <label><input type="radio" name="RadBand" checked />Visa</label>
+                            <label><input type="radio" name="RadBand" />Master</label>
+                            <label><input type="radio" name="RadBand" />Elo</label>
+                        </label><br />
+                        <label class="colLabCrd" for="mesVal">Validade:
+                            <input type="number" name="TxtMesVal" id="mesVal" min="1" max="12" class="numDD"
+                                value="8" /> /
+                            <input type="number" name="TxtAnoVal" value="2025" min="2025" max="2045"
+                                class="numQD" /></label><br />
+                        <label class="colLabCrd" for="numCar">Número:
+                            <input type=text name="TxtNumCard" class="inpNCC" id="numCar" /></label>
+                    </fieldset><label class="colLabCrd" for="numCPF"><br />CPF:
+                        <input type=text name="TxtCPF" class="inpNCC" id="numCPF" onChange="VerificaCPF(this);"
+                            required /></label>
+                    <label class="elemDir" for="TxtTotal"><br />Valor R$
+                        <input type="text" name="TxtTotal" id="TxtTotal" class="inpMedio" value="0" readonly /></label>
+                </fieldset>
+                <div class="botoes">
+                    <input type="submit" value="Comprar" />
+                    <input type="reset" value="Limpar" />
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+</html>

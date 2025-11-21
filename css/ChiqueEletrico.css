@@ -1,0 +1,294 @@
+header {
+    display: block;
+    margin-bottom: 1px;
+}
+
+nav {
+    display: block;
+    width: 20%;
+    float: left;
+}
+
+@font-face {
+    font-family: karla, stoke;
+    src: url(https://fonts.googleapis.com/css?family=Karla|Stoke);
+}
+
+section {
+    display: block;
+    width: 70%;
+    float: right;
+}
+
+body {
+    background-color: #2277DD;
+    font-size: 16px;
+    color: #FFEE44;
+    font-family: 'karla', 'stoke', 'ubuntu';
+
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: #ffee55;
+}
+
+a:visited {
+    color: #ffee33
+}
+
+ul {
+    line-height: 200%;
+}
+
+li {
+    line-height: 200%
+}
+
+.ender {
+
+    float: right;
+    text-align: right;
+    line-height: 140%;
+    font-size: 14px;
+    font-family: 'karla', verdana, 'ubuntu';
+
+}
+
+.imgLogo {
+    border-bottom: 3px solid #ffffff;
+    margin-bottom: 6px;
+    padding-bottom: 10px;
+}
+
+nav ul {
+    color: #FFEE44;
+    line-height: 230%;
+    margin-top: 40px;
+    list-style-type: square;
+}
+
+div.apres {
+    text-align: center;
+    font-size: 16px;
+    float: left;
+}
+
+/* Estilo Materiais */
+.tamanho400 {
+    width: 400px;
+}
+
+.titulo {
+    text-align: center;
+}
+
+.listMat {
+    width: 340px;
+    background-color: #EEEEBB;
+    color: #202020;
+    margin: 0px auto 10px auto;
+    padding: 10px 10px 10px 30px;
+    border: 3px solid #202020;
+    font-size: 14px;
+    float: left;
+    font-family: 'karla', verdana, 'ubuntu';
+
+}
+
+
+.listMat a:link {
+    color:#303030 ;
+}
+
+ol {
+    color: #202020;
+    padding-bottom: 15px;
+}
+
+.preco {
+    color: #CC0000;
+}
+
+/* Estilo do Acabamento*/
+
+.tabAcab {
+    border-collapse: collapse;
+    border: solid;
+    margin-top: 6px;
+    font-size: 15px;
+    background-color: #FFFFCC;
+    color: #000000;
+    font-family: karla, verdana, ubuntu;
+
+}
+
+.tabAcab th {
+    border: 2px solid #000000;
+    padding: 6px 12px 6px 12px;
+}
+
+.tabAcab td {
+    border: 2px solid #000000;
+    padding: 6px 12px 6px 12px;
+
+}
+
+.linTH {
+    color: #EEEE00;
+    background-color: #666666;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.tabAcab .colTH {
+    background-color: #AAAAAA;
+    color: #000000;
+    text-align: left;
+}
+
+.tabAcab a{
+  color:  #303030;
+}
+
+.imgAcab {
+    width: 60px;
+    height: 44px;
+}
+
+/* Estilo do pedidos*/
+.divCompras {
+    width: 550px;
+    color: #000000;
+    background-color: #FFFFCC;
+    padding: 6px 6px 15px 6px;
+    font-size: 12px;
+    margin: 20px 0px;
+    border: 2px solid #000000;
+}
+
+.listaCompras {
+    width: 210px;
+    height: 180px;
+    float: right;
+    margin-top: 2px;
+    margin-left: 10px;
+}
+
+.linhaProdSel {
+    width: 220px;
+    margin-bottom: 6px;
+    float: left;
+}
+
+
+.colLabSelProd {
+    width: 230px;
+    height: 40px;
+    float: right;
+}
+
+.colLabCrd {
+    width: 260px;
+    height: 40px;
+}
+
+.botoes {
+    text-align: right;
+    margin: 20px 10px 0px 10px;
+}
+
+.fsEsq {
+    float: left;
+    display: inline;
+    margin: 0px 0px 0px 0px;
+}
+
+.fsDir {
+    float: right;
+    display: inline;
+    margin: 0px 0px 0px 0px;
+}
+
+.inpGrande {
+    width: 380px;
+}
+
+.impMedio {
+    width: 80px;
+}
+
+.impNCC {
+    width: 130px
+}
+
+.impTelf {
+    width: 90px;
+}
+
+.impEnder {
+    width: 180px;
+    height: 50px;
+}
+
+.numDD {
+    width: 30px;
+
+}
+
+.numQD {
+    width: 50px;
+}
+
+.divLinha {
+    width: 500px;
+    margin-bottom: 6px;
+    clear: both;
+}
+
+.elemDir {
+    float: right;
+    display: block;
+}
+
+.colLabCrd {
+    float: left;
+    width: 260px;
+    height: 40px;
+
+}
+
+.colPri {
+    float: left;
+    display: block;
+    width: 90px;
+}
+
+.colPriCompras {
+    float: left;
+    display: block;
+    width: 86px;
+}
+
+.colPriPag {
+    float: left;
+    display: block;
+    width: 250px;
+}
+
+.Materias {
+color: #EEEE00;
+text-align: center;
+font-size: 20px;
+}
+
+.menuTab {
+    height: 40px;
+}
+
+#ImgDes{
+    height: 120px;
+}
